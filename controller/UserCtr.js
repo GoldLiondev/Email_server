@@ -1,6 +1,6 @@
 const sendGridMail = require("@sendgrid/mail");
 const SENDGRID_API_KEY =
-  "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";
+  "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";
   
 sendGridMail.setApiKey(SENDGRID_API_KEY);
 
@@ -12,7 +12,7 @@ exports.sendEmail = async (req, res) => {
     const body = `Press here to verify your email. Thank you.`;
     await sendGridMail.send({
       to: "wstar3233@gmail.com",
-      from: "Thomas@versi.studio",
+      from: "verify@madreply.com",
       subject: "Madreply - Verify your email",
       text: "Verify your email",
       html: body,
